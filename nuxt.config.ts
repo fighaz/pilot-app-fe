@@ -17,6 +17,11 @@ export default defineNuxtConfig({
     },
   },
 
+  // Nitro auto-detects Vercel (zero config); this just shrinks static assets.
+  nitro: {
+    compressPublicAssets: true,
+  },
+
   app: {
     head: {
       title: 'Susi Air Pilot App',
